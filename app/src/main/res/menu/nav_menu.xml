@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/anasayfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="anasayfa" />
+    <item
+        android:id="@+id/hesabim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="hesap" />
+    <item
+        android:id="@+id/ayarlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="ayarlar" />
+</menu>
