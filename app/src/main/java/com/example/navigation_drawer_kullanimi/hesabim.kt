@@ -17,6 +17,11 @@ class hesabim : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding= FragmentHesabimBinding.inflate(inflater,container,false)
+        binding.kaydet.setOnClickListener(){
+            val alinaveri=binding.girdi.text.toString()
+            binding.girilenVeri.text=alinaveri
+
+        }
 
         return binding.root
     }
