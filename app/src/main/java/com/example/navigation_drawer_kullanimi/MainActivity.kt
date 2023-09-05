@@ -3,6 +3,7 @@ package com.example.navigation_drawer_kullanimi
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     @Deprecated("deprecated in java")
     override fun onBackPressed() {
+        Toast.makeText(this,"yar",Toast.LENGTH_LONG)
         if (binding.drawer.isDrawerOpen(GravityCompat.START)){
             binding.drawer.closeDrawer(GravityCompat.START)
         }

@@ -9,15 +9,30 @@
         android:id="@+id/anasayfa"
         android:name="com.example.navigation_drawer_kullanimi.anasayfa"
         android:label="fragment_anasayfa"
-        tools:layout="@layout/fragment_anasayfa" />
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_anasayfa_to_ayarlar"
+            app:destination="@id/ayarlar" />
+    </fragment>
     <fragment
         android:id="@+id/ayarlar"
         android:name="com.example.navigation_drawer_kullanimi.ayarlar"
         android:label="fragment_ayarlar"
-        tools:layout="@layout/fragment_ayarlar" />
+        tools:layout="@layout/fragment_ayarlar" >
+        <action
+            android:id="@+id/ayarlar_to_anasayfa"
+            app:destination="@id/anasayfa" />
+        <action
+            android:id="@+id/action_ayarlar_to_hesabim"
+            app:destination="@id/hesabim" />
+    </fragment>
     <fragment
         android:id="@+id/hesabim"
         android:name="com.example.navigation_drawer_kullanimi.hesabim"
         android:label="fragment_hesabim"
-        tools:layout="@layout/fragment_hesabim" />
+        tools:layout="@layout/fragment_hesabim" >
+        <action
+            android:id="@+id/action_hesabim_to_anasayfa"
+            app:destination="@id/anasayfa" />
+    </fragment>
 </navigation>

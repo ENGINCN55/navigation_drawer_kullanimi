@@ -1,6 +1,9 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+
+
+
 }
 
 android {
@@ -9,6 +12,7 @@ android {
     buildFeatures{
         viewBinding=true
     }
+
 
     defaultConfig {
         applicationId = "com.example.navigation_drawer_kullanimi"

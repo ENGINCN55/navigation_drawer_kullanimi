@@ -40,6 +40,7 @@
 
         android:text="parlaklık"
         android:textSize="24sp"
+        android:paddingLeft="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/switch2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -58,6 +59,67 @@
         android:textSize="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/ayar_kaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/ayar_kaydet"
+        android:layout_width="410dp"
+        android:layout_height="86dp"
+        android:text="ayarları kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/ses_ayari"
+        android:layout_width="119dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="292dp"
+        android:max="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:paddingLeft="20dp"
+        android:text="ses"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ses_ayari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/ses_gösterge"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="%0"
+        android:paddingLeft="23dp"
+        android:singleLine="false"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
